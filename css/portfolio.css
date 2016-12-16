@@ -1,16 +1,9 @@
-/*!
-  * Based on:
- * Start Bootstrap - Creative v3.3.7+1 (http://startbootstrap.com/template-overviews/creative)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
 html,
 body {
   height: 100%;
   width: 100%;
 }
 body {
-  /*font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;*/
   font-family: 'Ubuntu Condensed', sans-serif;
 
 }
@@ -38,7 +31,6 @@ h3,
 h4,
 h5,
 h6 {
-  /*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
   font-family: 'Ubuntu Condensed', sans-serif;
 }
 p {
@@ -112,8 +104,9 @@ aside {
 }
 @media (min-width: 768px) {
   .navbar-default {
-    background-color: transparent;
-    border-color: rgba(255, 255, 255, 0.3);
+    background-color: SeaGreen;
+    opacity: .75;
+    border-color: none;
   }
   .navbar-default .navbar-header .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
@@ -163,7 +156,6 @@ header {
   background-image: url('../img/maccartoon.gif');
   text-align: center;
   color: white;
-
 }
 header .header-content {
   position: relative;
@@ -176,12 +168,13 @@ header .header-content .header-content-inner h1 {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 625px;
   font-size: 30px;
-
 }
 header .header-content .header-content-inner hr {
   margin: 30px auto;
-  border-color: #560808;
+  border-color: white;
+  margin-left: 780px;
 }
 header .header-content .header-content-inner p {
   font-weight: 300;
@@ -212,12 +205,39 @@ header .header-content .header-content-inner p {
   header .header-content .header-content-inner p {
     font-size: 18px;
     max-width: 80%;
-    margin-left: auto;
+    margin-left: 640px;
     margin-right: auto;
   }
 }
 .section-heading {
   margin-top: 0;
+}
+ul {
+  list-style: none;
+}
+#skillsDiv {
+  text-align: center;
+  max-width: 100%;
+}
+#skills-list {
+  text-align: center;
+  width: 100%;
+}
+#skills-list li {
+  display: inline-block;
+  text-align: center;
+  margin: 0 10px 0 10px;
+}
+#skill-div{
+  display: inline;
+  text-align: center;
+}
+#skill-div img p {
+  display: inline;
+}
+.skill-icon {
+  max-width: 48px;
+  max-height: 48px;
 }
 
 @media (min-width: 992px) {
@@ -267,6 +287,10 @@ header .header-content .header-content-inner p {
 }
 .portfolio-box:focus {
   outline: none;
+}
+.skill-icon {
+  max-width: 65px;
+  max-height: 65px;
 }
 @media (min-width: 768px) {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -412,4 +436,10 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+.nav>li>a>img {
+    max-width: 22px;
+}
+.navbar-collapse img {
+  max-width: 32px;
 }
